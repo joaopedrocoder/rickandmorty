@@ -1,8 +1,15 @@
-#chars-container {
+#characters-container {
     padding: 20px 40px;
 }
 
-#chars-list {
+#characters-list {
+    margin-top: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 17px;
+}
+
+.character {
+    // margin-bottom: 20px;
 }

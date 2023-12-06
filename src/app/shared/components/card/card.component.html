@@ -1,0 +1,9 @@
+<div class="card-container">
+    <img [src]="character?.image" alt="" class="responsive-img">
+    <div class="text-card-container">
+        <h5>{{character?.name}}</h5>
+        <span class="text-card-info" *ngIf="character?.species">- {{character?.species}}</span>
+        <span class="text-card-info" *ngIf="character?.type">- {{character?.type}}</span>
+        <span class="text-card-info" *ngIf="character?.status">- {{character?.status}}</span>
+    </div>
+</div>
