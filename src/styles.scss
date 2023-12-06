@@ -1,11 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import './assets/styles/variables';
 
 /*RESET*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
 }
 
 /*CLASSES GLOBAIS*/
