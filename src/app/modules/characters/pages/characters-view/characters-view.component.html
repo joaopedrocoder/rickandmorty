@@ -1,20 +1,8 @@
 <section id="characters-container">
     <h4>PERSONAGENS</h4>
     <ul id="characters-list">
-        <li class="character">
-            <app-card [character]="charactersList[0]"></app-card>
-        </li>
-        <li class="character">
-            <app-card [character]="charactersList[0]"></app-card>
-        </li>
-        <li class="character">
-            <app-card [character]="charactersList[0]"></app-card>
-        </li>
-        <li class="character">
-            <app-card [character]="charactersList[0]"></app-card>
-        </li>
-        <li class="character">
-            <app-card [character]="charactersList[0]"></app-card>
+        <li class="character" *ngFor="let character of charactersList">
+            <app-card [character]="character"></app-card>
         </li>
     </ul>
 </section>
