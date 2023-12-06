@@ -9,7 +9,7 @@ import { map, pipe } from 'rxjs';
   styleUrl: './characters-view.component.scss'
 })
 export class CharactersViewComponent {
-  charsList: ICharacter[] = []
+  charactersList: ICharacter[] = []
 
   constructor(private characterService: CharactersService) {}
 
@@ -23,7 +23,7 @@ export class CharactersViewComponent {
         map(data => data.results)
       )
       .subscribe({
-        next: response => console.log(response),
+        next: response => this.charactersList = response,
         error: err => console.log(err)
       })
   }
